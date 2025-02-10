@@ -1,5 +1,5 @@
 :root {
-    --color-background: #D4B988;
+    --color-background: #afd488;;
     --color-text: #000000;
     --color-button: #2563eb;
     --color-button-hover: #1d4ed8;
@@ -47,11 +47,8 @@
   }
   
   .nav a {
-    border: 0.5px solid white;
-    border-radius: 8px;
     padding: 5px 30px;
   }
-  
   
   .nav-link {
     font-size: 1.125rem;
@@ -90,30 +87,7 @@
     font-weight: 200;
     line-height: 1.7;
   }
-  
-  .cta-button {
-    display: inline-block;
-    background-color: var(--color-button);
-    color: white;
-    text-decoration: none;
-    padding: 0.75rem 2rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
-    align-self: flex-start;
-  }
-  
-  .cta-button:hover {
-    background-color: var(--color-button-hover);
-  }
-  
-  /* .assignments {
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 2rem;
-  } */
-  
+
   .assignments-title {
     font-size: 2rem;
     font-weight: 500;
@@ -129,11 +103,11 @@
   }
   
   .assignment-card {
-    background:#D4B988;
+    background:#afd488;
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border: 0.5px solid #fee2d6;
+    border: 0.5px solid black;
     text-decoration: none;
     transition: all 0.3s ease;
   }
@@ -177,7 +151,7 @@
     }
   
     .nav {
-        display: none; /* In a real project, you'd want to implement a mobile menu */
+        display: none;
     }
   }
   
