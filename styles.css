@@ -1,0 +1,196 @@
+:root {
+    --color-background: #D4B988;
+    --color-text: #000000;
+    --color-button: #2563eb;
+    --color-button-hover: #1d4ed8;
+    --max-width: 1200px;
+    --padding-x: 2rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+  
+  .wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding-x);
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  
+  .nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav a {
+    border: 0.5px solid white;
+    border-radius: 8px;
+    padding: 5px 30px;
+  }
+  
+  
+  .nav-link {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: opacity 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    opacity: 0.75;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 0;
+    align-items: center;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.7;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: var(--color-button);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--color-button-hover);
+  }
+  
+  /* .assignments {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+  } */
+  
+  .assignments-title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .assignments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .assignment-card {
+    background:#D4B988;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 0.5px solid #fee2d6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .assignment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    /* border-color: black; */
+  }
+  
+  .assignment-title {
+    color: black;;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  
+  .assignment-link {
+    color: #666;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    /* background: #f8f9fa; */
+    color: #666;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+  
+    .hero-title {
+        font-size: 2.5rem;
+    }
+  
+    .hero-subtitle {
+        font-size: 1.875rem;
+    }
+  
+    .nav {
+        display: none; /* In a real project, you'd want to implement a mobile menu */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    :root {
+        --padding-x: 1rem;
+    }
+  
+    .hero-title {
+        font-size: 2rem;
+    }
+  
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+  }
